@@ -1,5 +1,7 @@
 # PB-Plugable-Demo
 
+![PocketBase UI Plugin React Example](./Screenshot.png)
+
 A demonstration project showcasing how to use UI plugin system to extend the Pocketbase interface with custom React applications.
 
 
@@ -14,15 +16,13 @@ A demonstration project showcasing how to use UI plugin system to extend the Poc
 The React plugin in [`/simple_react`](./ui-plugins/simple_react) is a basic frontend project generated entirely using the scaffolding command `npm create vite@latest . -- --template react-ts`, with only one modification to add the `base` configuration in `vite.config.ts`:
 
 ```typescript
-
 export default defineConfig({
-  base: '/ui-plugins/my_plugin/',  // Must match your plugin's base path
+  base: '/ui-plugins/simple_react/', // Must match your plugin's base path
   plugins: [react()],
 })
 ```
 
 **Important**: The `base` path must match the `Base` field in your `plugin.go` file. For example:
-- If your plugin.go has `Base: "my_plugin"`, then vite.config.ts should have `base: '/ui-plugins/my_plugin/'`
 - If your plugin.go has `Base: "simple_react"`, then vite.config.ts should have `base: '/ui-plugins/simple_react/'`
 
 
