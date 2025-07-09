@@ -5,7 +5,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/pocketbase/pocketbase/apis"
+	"github.com/sospartan/pocketbase/apis"
 )
 
 //go:embed all:dist

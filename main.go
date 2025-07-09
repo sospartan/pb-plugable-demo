@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/pocketbase/pocketbase"
-	"github.com/pocketbase/pocketbase/plugins/uiplugin"
+	"github.com/sospartan/pocketbase"
+	"github.com/sospartan/pocketbase/plugins/uiplugin"
 	_ "github.com/sospartan/pb-plugable-demo/ui-plugins/simple_react"
 )
 

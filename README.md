@@ -2,12 +2,13 @@
 
 ![PocketBase UI Plugin React Example](./Screenshot.png)
 
-A demonstration project showcasing how to use UI plugin system to extend the Pocketbase interface with custom React applications.
+A demonstration project showcasing how to use UI plugin system to extend the Pocketbase interface with custom React applications.   
+**Latest version**: `0.28.4-plug`
 
 
 ## Quick Start
 
-1. **Setup submodule**: `cd pocketbase && git checkout ui-pluggable && cd ..`
+1. **Setup submodule**: `go get github.com/sospartan/pocketbase@v0.28.4-plug`
 2. **Build React plugin**: `cd ui-plugins/simple_react && npm install && npm run build && cd ../..`
 3. **Start application**: `go run . serve`
 
