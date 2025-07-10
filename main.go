@@ -3,9 +3,11 @@ package main
 import (
 	"log"
 
-	"github.com/sospartan/pocketbase"
-	"github.com/sospartan/pocketbase/plugins/uiplugin"
+	_ "github.com/sospartan/pb-plugable-demo/migrations"
 	_ "github.com/sospartan/pb-plugable-demo/ui-plugins/simple_react"
+	"github.com/sospartan/pocketbase"
+	"github.com/sospartan/pocketbase/plugins/migratecmd"
+	"github.com/sospartan/pocketbase/plugins/uiplugin"
 )
 
 func main() {
@@ -18,7 +20,11 @@ func main() {
 	uiplugin.MustRegister(app, app.RootCmd, uiplugin.Config{
 		Dir: "ui-plugins",
 	})
-	
+
+	migratecmd.MustRegister(app, app.RootCmd, migratecmd.Config{
+		Dir:         "migrations",
+		Automigrate: true,
+	})
 
 	if err := app.Start(); err != nil {
 		log.Fatal(err)

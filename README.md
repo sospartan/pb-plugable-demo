@@ -2,7 +2,7 @@
 
 ![PocketBase UI Plugin React Example](./Screenshot.png)
 
-A demonstration project showcasing how to use UI plugin system to extend the Pocketbase interface with custom React applications.   
+A demonstration 'to-do list' project showcasing how to use UI plugin system to extend the Pocketbase interface with custom React applications.   
 **Latest version**: `0.28.4-plug`
 
 
