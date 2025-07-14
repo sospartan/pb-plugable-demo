@@ -30,7 +30,7 @@ export default defineConfig({
 ## Related Resources
 
 - [PocketBase Official Documentation](https://pocketbase.io/docs)
-- [UI Plugin System Documentation](./pocketbase/UI_PLUGIN_README.md)
-- [PocketBase GitHub Repository](https://github.com/pocketbase/pocketbase)
+- [UI Plugins Documentation](https://github.com/sospartan/pocketbase)
+
 
 
